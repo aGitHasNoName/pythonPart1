@@ -1,0 +1,328 @@
+When you type on the line and hit enter, you "run" the code.
+If something gets printed out to the screen, we say it is "returned".
+
+
+Arithmetic operators
+
+4 + 2
+
+6 - 1
+
+100 * 35
+
+40 / 6
+
+40 // 6
+
+40 % 6
+
+40 / 5
+
+40 // 5
+
+40 % 5
+
+4 ** 2
+
+PEMDAS order of operations:
+
+40 / 5 + 2
+
+40 + 2 * 6 - 1
+
+(40 + 2) * (6 - 1)
+
+
+
+Comparison operators (return Boolean objects)
+
+3 > 2
+
+3 < 2
+
+3 == 3
+
+3 != 3
+
+3 != 2
+
+3 >= 2
+
+3 <= 2
+
+
+Logical operators (return Boolean objects)
+
+3 < 4 and 4 == 4
+
+3 < 4 or 4 == 4
+
+2 > 3 or not 2 == 2
+
+not 2 > 3 or not 2 == 2
+
+
+
+Strings (double or single quotes)
+
+"Hello World"
+
+print("Hello World")
+
+"Hello World\nHow are you?"
+
+print("Hello World\nHow are you?")
+
+print("Hello World\tHow are you?")
+
+
+Data types
+
+type("Hello World")
+
+type(9)
+
+type(9.9)
+
+float(9)
+
+float("5")
+
+int("5")
+
+int(5.5)
+
+str(5.005)
+
+
+Data types interacting
+
+4 * 4.0
+
+"Hello World" * 4
+
+"Hello World" + 4
+
+5 + True
+
+5 + False
+
+True evaluates to 1, False evaluates to 0
+
+
+
+Break
+
+
+Variables
+
+x = 3
+
+x
+
+Nothing is returned when you assign a variable. 
+Everything on the right side of the assignment operator is calculated
+and then stored as the variable on the left.
+
+x = 3 - 1
+
+x
+
+y = x
+
+y
+
+x = x**y
+
+x
+
+y
+
+rabbit = 50
+
+rabbit - 20
+
+rabbit
+
+greeting = "Hello you!"
+
+print(greeting)
+
+Slide about naming variables
+
+
+
+Slide about functions
+
+String Functions
+
+len(greeting)
+
+greeting.replace("!", ".")
+
+greeting.replace(" ", "")
+
+print(greeting)
+
+greeting.upper()
+
+print(greeting)
+
+greeting.lower()
+
+my_name = "Colby"
+
+greeting = greeting.replace("you", my_name)
+
+print(greeting)
+
+greeting2 = "Hello " + my_name + "!"
+
+print(greeting2)
+
+
+Indexing strings to take a substring
+
+substring slide
+
+greeting[0:5]
+
+hello = greeting[0:5]
+
+print(hello)
+
+hello[2]
+
+hello[-1]
+
+hello[3:]
+
+hello[:2]
+
+hello[2:-1]
+
+full_message = "What's up, Erica?"
+
+full_message[5:13]
+
+full_message[5:13].replace(" ", "")
+
+full_message[5:13].replace(" ", "").replace(",", "")
+
+full_message[5:13].replace(" ", "").replace(",", "").lower()
+
+full_message[5:13].replace(" ", "").replace(",", "").lower().capitalize()
+
+full_message[5:13].replace(" ", "").replace(",", "").lower().capitalize() + "!"
+
+Exercise - Hidden message
+
+
+
+Break
+
+
+Lists (square brackets, commas)
+
+grades = [93, 75, 80, 98, 100, 64, 88]
+
+students = ["Casey", "Taylor", "Lee", "Luca", "Quinn", "Ruka"]
+
+grades.sort()
+
+grades
+
+students.append("Jo")
+
+students
+
+len(grades)
+
+len(grades) == len(students)
+
+" and ".join(students)
+
+sum(grades)
+
+more_grades = [70, 93]
+
+grades = grades + more_grades
+
+grades
+
+class_info = [grades, students]
+
+class_info
+
+
+Indexing lists
+
+students[0]
+
+students[-2]
+
+students[1:4]
+
+students[1] = "Tyler"
+
+students
+
+The real power of lists will be revealed tomorrow.
+
+Copying lists slide if time
+
+
+
+
+#Writing your own function
+
+#indentation!
+
+def mean(number_list):
+	#find the mean of a list of numbers
+    total = sum(number_list)
+    count = len(number_list)
+    answer = total / count
+    return answer
+
+mean(grades)
+
+def mean(number_list):
+	#find the mean of a list of numbers
+    total = sum(number_list)
+    count = len(number_list)
+    answer = round(total / count, 2)
+    return answer
+
+mean(grades)
+
+mean([4, 2, 100, 6, 5])
+
+mean(students)
+
+testAgrades = mean(grades)
+
+print(testAgrades)
+
+#Exercise function writing
+
+
+
+#Loading modules - installing vs. importing
+
+import statistics
+
+statistics.stdev([4, 5, 8, 20])
+
+from statistics import stdev
+
+stdev([4, 5, 8, 20])
+
+from statistics import stdev as sd
+
+sd([4, 5, 8, 20])
+
+from statistics import stdev as raccoon
+
+raccoon([4, 5, 8, 20])
+
