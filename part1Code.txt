@@ -1,8 +1,8 @@
-When you type on the line and hit enter, you "run" the code.
-If something gets printed out to the screen, we say it is "returned".
+#When you type on the line and hit enter, you "run" the code.
+#If something gets printed out to the screen, we say it is "returned".
 
 
-Arithmetic operators
+#Arithmetic operators
 
 4 + 2
 
@@ -24,7 +24,7 @@ Arithmetic operators
 
 4 ** 2
 
-PEMDAS order of operations:
+#PEMDAS order of operations:
 
 40 / 5 + 2
 
@@ -34,7 +34,7 @@ PEMDAS order of operations:
 
 
 
-Comparison operators (return Boolean objects)
+#Comparison operators (return Boolean objects)
 
 3 > 2
 
@@ -51,7 +51,7 @@ Comparison operators (return Boolean objects)
 3 <= 2
 
 
-Logical operators (return Boolean objects)
+#Logical operators (return Boolean objects)
 
 3 < 4 and 4 == 4
 
@@ -63,7 +63,7 @@ not 2 > 3 or not 2 == 2
 
 
 
-Strings (double or single quotes)
+#Strings (double or single quotes)
 
 "Hello World"
 
@@ -76,7 +76,7 @@ print("Hello World\nHow are you?")
 print("Hello World\tHow are you?")
 
 
-Data types
+#Data types
 
 type("Hello World")
 
@@ -95,7 +95,7 @@ int(5.5)
 str(5.005)
 
 
-Data types interacting
+#Data types interacting
 
 4 * 4.0
 
@@ -107,22 +107,22 @@ Data types interacting
 
 5 + False
 
-True evaluates to 1, False evaluates to 0
+#True evaluates to 1, False evaluates to 0
 
 
 
-Break
+#Break
 
 
-Variables
+#Variables
 
 x = 3
 
 x
 
-Nothing is returned when you assign a variable. 
-Everything on the right side of the assignment operator is calculated
-and then stored as the variable on the left.
+#Nothing is returned when you assign a variable. 
+#Everything on the right side of the assignment operator is calculated
+#and then stored as the variable on the left.
 
 x = 3 - 1
 
@@ -148,13 +148,13 @@ greeting = "Hello you!"
 
 print(greeting)
 
-Slide about naming variables
+#Slide about naming variables
 
 
 
-Slide about functions
+#Slide about functions
 
-String Functions
+#String Functions
 
 len(greeting)
 
@@ -181,9 +181,9 @@ greeting2 = "Hello " + my_name + "!"
 print(greeting2)
 
 
-Indexing strings to take a substring
+#Indexing strings to take a substring
 
-substring slide
+#substring slide
 
 greeting[0:5]
 
@@ -215,14 +215,14 @@ full_message[5:13].replace(" ", "").replace(",", "").lower().capitalize()
 
 full_message[5:13].replace(" ", "").replace(",", "").lower().capitalize() + "!"
 
-Exercise - Hidden message
+#Exercise - Hidden message
 
 
 
-Break
+#Break
 
 
-Lists (square brackets, commas)
+#Lists (square brackets, commas)
 
 grades = [93, 75, 80, 98, 100, 64, 88]
 
@@ -255,7 +255,7 @@ class_info = [grades, students]
 class_info
 
 
-Indexing lists
+#Indexing lists
 
 students[0]
 
@@ -267,9 +267,9 @@ students[1] = "Tyler"
 
 students
 
-The real power of lists will be revealed tomorrow.
+#The real power of lists will be revealed tomorrow.
 
-Copying lists slide if time
+#Copying lists slide if time
 
 
 
